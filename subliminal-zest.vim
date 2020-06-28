@@ -1,6 +1,6 @@
 " Subliminal-Zest Colorscheme
 " Maintainer:	Nicholas Prieto
-" Last Change:	May 12th, 2020
+" Last Change:	June 28th, 2020
 
 " set background = dark
 hi clear
