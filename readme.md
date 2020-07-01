@@ -4,7 +4,7 @@ Subliminal-Zest is a theme plugin inspired by the likes of the pastel-colored,
 dark colors in the Zeonica theme in VS Code and the strategic, syntactical
 rules of Subliminal-Next. This theme aims to draw your attention to only the key
 elements of your code - function definitions, variable, function calls, class
-names, numbers, etc. while making keywords remain subtly camouflaged in the
+names, numbers, etc. while leaving keywords remain subtly camouflaged in the
 background.
 
 ## Installation
@@ -16,7 +16,7 @@ Plug 'nickdark/subliminal-zest'
 ```
 
 ### Pathogen (https://github.com/tpope/vim-pathogen)
-```vim
+```sh
 git clone https://github.com/nickdark/vim-subliminal-zest
 ~/.vim/bundle/vim-subliminal-zest
 ```
