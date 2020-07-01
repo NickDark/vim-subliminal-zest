@@ -1,6 +1,5 @@
 " Subliminal-Zest Colorscheme
 " Maintainer:	Nicholas Prieto
-" Last Change:	June 28th, 2020
 
 " set background = dark
 hi clear
@@ -8,20 +7,21 @@ if exists("syntax_on")
     syntax reset
 endif
 let g:colors_name = "subliminal-zest"
+" #01001D
 " #F1F1FC
 " #9494CC
 " #E5B2FF
 " #8CC6FF
+" #242272
 " #EB90B1
+" #612150
 " #B3FA9D
 " #4CECAE
 " #FFF6A6
 " #FFCCB0
-" #93DE73
-" #93d986
 
-" General
-set fillchars+=vert:\ 
+" General {{{
+set fillchars+=vert:\
 syn match Paren /[(){}]/
 " syn match CustomOperator /[=+-<>!%&|]/
 hi VertSplit            guibg=bg
@@ -32,13 +32,17 @@ hi SignColumn           guibg=bg
 hi EndOfBuffer          guifg=#01001D
 hi Folded               guifg=#EB90B1       guibg=bg
 hi LineNr               guifg=#9494CC
-hi CursorLine           guifg=bg            guibg=bg
+hi Cursor               guifg=black       guibg=white gui=reverse
+hi iCursor              guifg=black       guibg=white
+hi CursorIM             guifg=reverse       guibg=reverse
+hi CursorLine           guibg=bg
 hi CursorLineNr         guifg=#F1F1FC
 hi MatchParen           guifg=#F1F1FC       guibg=#851800
 hi Visual               guifg=Black         guibg=White
 hi MoreMsg              guifg=#B3FA9D       guibg=bg
 hi ErrorMsg             guifg=#EB90B1       guibg=bg
 hi WarningMsg           guifg=#FFF6A6       guibg=bg
+hi SpellBad             guifg=#eb90b1       guibg=bg     gui=standout
 hi Title                guifg=#FFCCB0
 hi Normal		        guifg=#F1F1FC	    guibg=bg
 hi Comment	            guifg=#8CC6FF
@@ -52,12 +56,13 @@ hi Type	                guifg=#e5b2ff
 hi Function	            guifg=#4CECAE
 hi Repeat	            guifg=#FFCCB0
 hi Exception            guifg=#FFCCB0
-" Vim
+" }}}
+" Vim {{{
 hi vimError             guifg=#eb90b1       guibg=bg
 " hi Question             guifg=#eb90b1
-hi Pmenu                guifg=#f1f1fc       guibg=#8cc6ff
-hi PmenuSel             guifg=#f1f1fc       guibg=#eb90b1
-hi PmenuSbar            guibg=#8cc6ff
+hi Pmenu                guifg=#f1f1fc       guibg=#242272
+hi PmenuSel             guifg=#f1f1fc       guibg=#612150
+hi PmenuSbar            guibg=#242272
 hi vimMap               guifg=#9494CC
 hi vimSet               guifg=#9494CC
 hi vimHighlight         guifg=#9494CC
@@ -94,57 +99,95 @@ hi Todo	                guifg=Black         guibg=#F1F1FC
 hi DiffAdd              guifg=Black         guibg=#b3fa9d
 hi DiffChange           guifg=Black         guibg=#FFF6A6
 hi DiffDelete           guifg=Black         guibg=#EB90B1
-hi Directory            guifg=#4CECAE       
-" Markdown
+hi Directory            guifg=#4CECAE
+" hi StartifyBracket
+hi StartifyPath         guifg=#E5B2FF
+hi StartifyFile         guifg=#b3fa9d
+" hi StartifyFooter
+" hi StartifyHeader
+" hi StartifyNumber
+" hi StartifySection
+" hi StartifySelect
+" hi StartifySlash
+" hi StartifySpecial
+" }}}
+" Python {{{
+hi pythonString 	guifg=#b3fa9d
+hi pythonQuotes 	guifg=#b3fa9d
+hi pythonStatement 	guifg=#9494cc
+hi pythonAttribute  guifg=#e5b2ff
+" }}}
+" Markdown {{{
 hi markdownOrderedListMarker        guifg=#b3fa9d
 hi markdownListMarker               guifg=#eb90b1
 hi markdownCodeBlock                guifg=#ffccb0
-" JavaScript
+" }}}
+" JavaScript {{{
 hi jsNoise              guifg=#9494CC
 hi CustomOperator       guifg=#9494CC
 hi jsObjectSeparator    guifg=#9494CC
 hi jsReturn             guifg=#9494CC
-hi jsArrowFunction      guifg=#4CECAE
+hi jsFunction           guifg=#9494CC
+hi jsArrowFunction      guifg=#4cecae
+hi jsClassDefinition    guifg=#FFCCB0
+hi jsConditional 	guifg=#e5b2ff
+hi jsRepeat 		guifg=#e5b2ff
+hi jsTernaryIfOperator  guifg=#eb90b1
+hi jsString 		guifg=#b3fa9d
+hi jsxString 		guifg=#b3fa9d
+hi jsxComponentName     guifg=#FFCCB0
+hi jsStorageClass       guifg=#9494cc
+hi jsSuper              guifg=#9494cc
+hi jsClassFuncName      guifg=#4cecae
+hi jsFuncCall           guifg=#4cecae
 hi jsOperator           guifg=#EB90B1
 hi jsxEqual             guifg=#EB90B1
 hi jsObjectColon        guifg=#EB90B1
 hi jsxBraces            guifg=#F1F1FC
 hi jsxOpenPunct         guifg=#F1F1FC
 hi jsxClosePunct        guifg=#F1F1FC
-" Git
+" }}}
+" Git {{{
 hi gitconfigNone              guifg=#eb90b1
 hi gitconfigSection             guifg=#b3fa9d
 hi jsxCloseString       guifg=#F1F1FC
-" HTML
-hi htmlTag              guifg=#F1F1FC
-hi htmlTagName          guifg=#9494CC
+" }}}
+" HTML {{{
+hi htmlTag              guifg=#9494CC
+hi htmlTagN             guifg=#9494CC
+hi htmlTagName          guifg=#f1f1fc
 hi htmlHead             guifg=#EB90B1
-" SQL
-hi sqlStatement         guifg=#4CECAE
+" }}}
+" SQL {{{
+hi sqlStatement         guifg=#FFCCB0
 hi sqlOperator          guifg=#9494CC
 hi sqlSpecial           guifg=#9494CC
 hi sqlKeyword           guifg=#9494CC
 hi sqlNumber            guifg=#FFF6A6
 hi sqlFold              guifg=#9494CC
 hi sqlFunction          guifg=#e5b2ff
-hi sqlString            guifg=#FFCCB0
+hi sqlString            guifg=#b3fa9d
 hi CustomOperator       guifg=#EB90B1
-" VimWiki
+" }}}
+" VimWiki {{{
 hi VimwikiBold          guifg=#4CECAE
 hi vimwikiListTodo      guifg=#EB90B1
 hi VimwikiBoldChar      guifg=#9494cc
 hi VimwikiHeaderChar      guifg=#9494cc
-" Help page
+" }}}
+" Help page {{{
 hi helpSpecial          guifg=#b3fa9d
 hi helpHyperTextJump    guifg=#e5b2ff
-" ALE
+" }}}
+" ALE {{{
 highlight ALEErrorSign guibg=NONE guifg=red
 highlight ALEWarningSign guibg=NONE guifg=yellow
 " hi ALEWarning             guifg=#eb90b1
 " hi ALEStyleErrorSign    guifg=#eb90b1
 " hi ALEWarning           guifg=#fff6a6
 " hi ALEStyleWarning      guifg=#fff6a6
-" Common groups that link to default highlighting.
+" }}}
+" Common groups that link to default highlighting. {{{
 " You can specify other highlighting easily.
 hi link String	        Statement
 hi link Character	    Statement
@@ -167,3 +210,4 @@ hi link SpecialChar	    Special
 hi link Delimiter	    Special
 hi link SpecialComment  Special
 hi link Debug		    Special
+" }}}
