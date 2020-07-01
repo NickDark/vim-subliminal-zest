@@ -7,6 +7,8 @@ elements of your code - function definitions, variable, function calls, class
 names, numbers, etc. while leaving keywords remain subtly camouflaged in the
 background.
 
+![](screenshot.png)
+
 ## Installation
 
 ------------
