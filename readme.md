@@ -32,3 +32,12 @@ Plugin 'nickdark/vim-subliminal-zest'
 ```vim
 NeoBundle 'nickdark/vim-subliminal-zest'
 ```
+
+## Supported Languages (Will add more soon)
+* Vimscript
+* SQL
+* Python
+* Javascript (React)
+* Markdown
+* Fish shell
+* HTML
