@@ -10,8 +10,6 @@ background.
 ![](screenshot.png)
 
 ## Installation
-
-------------
 ### VimPlug (https://github.com/junegunn/vim-plug)
 ```vim
 Plug 'nick-trick/subliminal-zest'
