@@ -27,34 +27,34 @@ syn match Paren /[(){}]/
 hi VertSplit            guibg=bg
 hi StatusLine           guibg=bg
 hi StatusLineNC         guibg=bg
-hi FoldColumn           guifg=#9494CC            guibg=bg
+hi FoldColumn           guifg=#9494CC           guibg=bg
 hi SignColumn           guibg=bg
 hi EndOfBuffer          guifg=#01001D
-hi Folded               guifg=#EB90B1       guibg=bg
+hi Folded               guifg=#EB90B1       	guibg=bg
 hi LineNr               guifg=#9494CC
-hi Cursor               guifg=black       guibg=white gui=reverse
-hi iCursor              guifg=black       guibg=white
-hi CursorIM             guifg=reverse       guibg=reverse
+hi Cursor               guifg=black		guibg=white 	gui=reverse
+hi iCursor              guifg=black		guibg=white
+hi CursorIM             guifg=reverse		guibg=reverse
 hi CursorLine           guibg=bg
 hi CursorLineNr         guifg=#F1F1FC
-hi MatchParen           guifg=#F1F1FC       guibg=#851800
-hi Visual               guifg=Black         guibg=White
-hi MoreMsg              guifg=#B3FA9D       guibg=bg
-hi ErrorMsg             guifg=#EB90B1       guibg=bg
-hi WarningMsg           guifg=#FFF6A6       guibg=bg
-hi SpellBad             guifg=#eb90b1       guibg=bg     gui=standout
+hi MatchParen           guifg=#F1F1FC		guibg=#851800
+hi Visual               guifg=Black		guibg=White
+hi MoreMsg              guifg=#B3FA9D		guibg=bg
+hi ErrorMsg             guifg=#EB90B1		guibg=bg
+hi WarningMsg           guifg=#FFF6A6		guibg=bg
+hi SpellBad             guifg=#eb90b1		guibg=bg     	gui=standout
 hi Title                guifg=#FFCCB0
-hi Normal		        guifg=#F1F1FC	    guibg=bg
-hi Comment	            guifg=#8CC6FF
-hi Constant	            guifg=#FFF6A6
-hi Special	            guifg=#9494CC
+hi Normal		guifg=#F1F1FC		guibg=bg
+hi Comment	        guifg=#8CC6FF
+hi Constant	        guifg=#FFF6A6
+hi Special	        guifg=#9494CC
 hi Identifier           guifg=#9494CC
 hi Statement            guifg=#FFCCB0
 hi Paren                guifg=#F1F1FC
-hi PreProc	            guifg=#9494CC
+hi PreProc	        guifg=#9494CC
 hi Type	                guifg=#e5b2ff
-hi Function	            guifg=#4CECAE
-hi Repeat	            guifg=#FFCCB0
+hi Function	        guifg=#4CECAE
+hi Repeat	        guifg=#FFCCB0
 hi Exception            guifg=#FFCCB0
 " }}}
 " Vim {{{

@@ -14,26 +14,26 @@ background.
 ------------
 ### VimPlug (https://github.com/junegunn/vim-plug)
 ```vim
-Plug 'nickdark/subliminal-zest'
+Plug 'nick-trick/subliminal-zest'
 ```
 
 ### Pathogen (https://github.com/tpope/vim-pathogen)
 ```sh
-git clone https://github.com/nickdark/vim-subliminal-zest
+git clone https://github.com/nick-trick/vim-subliminal-zest
 ~/.vim/bundle/vim-subliminal-zest
 ```
 
 ### Vundle (https://github.com/gmarik/vundle)
 ```vim
-Plugin 'nickdark/vim-subliminal-zest'
+Plugin 'nick-trick/vim-subliminal-zest'
 ```
 
 ### NeoBundle (https://github.com/Shougo/neobundle.vim)
 ```vim
-NeoBundle 'nickdark/vim-subliminal-zest'
+NeoBundle 'nick-trick/vim-subliminal-zest'
 ```
 
-## Supported Languages (Will add more soon)
+## Supported Languages (will add more soon)
 * Vimscript
 * SQL
 * Python
