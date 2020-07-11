@@ -39,3 +39,5 @@ NeoBundle 'nick-trick/vim-subliminal-zest'
 * Markdown
 * Fish shell
 * HTML
+* Vimwiki
+* various custom rules for popular (n)vim plugins
