@@ -21,10 +21,10 @@ let g:colors_name = "subliminal-zest"
 " #FFCCB0
 
 " General {{{
-set fillchars+=vert:\
+set fillchars+=vert:\|
 syn match Paren /[(){}]/
 " syn match CustomOperator /[=+-<>!%&|]/
-hi VertSplit            guibg=bg
+hi VertSplit            guifg=bg 		guibg=bg 	gui=NONE
 hi StatusLine           guibg=bg
 hi StatusLineNC         guibg=bg
 hi FoldColumn           guifg=#9494CC           guibg=bg
@@ -111,14 +111,14 @@ hi StartifyFile         guifg=#b3fa9d
 " hi StartifySlash
 " hi StartifySpecial
 " }}}
-" Python {{{
-hi pythonString 	guifg=#b3fa9d
-hi pythonQuotes 	guifg=#b3fa9d
-hi pythonStatement 	guifg=#9494cc
-hi pythonAttribute  guifg=#e5b2ff
+" CoC {{{
+hi CocErrorHighlight  	guifg=#eb90b1 	guibg=bg
+hi CocHintHighlight  	guifg=#b3fa9d 	guibg=bg
+hi CocInfoHighlight  	guifg=#8CC6FF 	guibg=bg
+hi CocWarningHighlight  guifg=#FFF6A6 	guibg=bg
 " }}}
 " Markdown {{{
-hi markdownOrderedListMarker        guifg=#b3fa9d
+hi markdownOrderedListMarker        guifg=#eb90b1
 hi markdownListMarker               guifg=#eb90b1
 hi markdownCodeBlock                guifg=#ffccb0
 " }}}
@@ -147,6 +147,13 @@ hi jsxBraces            guifg=#F1F1FC
 hi jsxOpenPunct         guifg=#F1F1FC
 hi jsxClosePunct        guifg=#F1F1FC
 " }}}
+" NERDTree {{{
+" hi NERDTreeCWD 		guifg=bg 	guibg=bg
+" hi NERDTreeVCS 		guifg=bg 	guibg=bg
+" }}}
+" JSON {{{
+hi jsonKeywordMatch 	guifg=#EB90B1
+" }}}
 " Git {{{
 hi gitconfigNone              guifg=#eb90b1
 hi gitconfigSection             guifg=#b3fa9d
@@ -157,6 +164,23 @@ hi htmlTag              guifg=#9494CC
 hi htmlTagN             guifg=#9494CC
 hi htmlTagName          guifg=#f1f1fc
 hi htmlHead             guifg=#EB90B1
+" }}}
+" CSS {{{
+hi cssBraces 		guifg=#9494cc
+hi cssStringQ 		guifg=#b3fa9d
+hi cssNoise 		guifg=#9494cc
+hi cssAttrRegion 	guifg=#4cecae
+hi BG000000 		guifg=#4cecae
+hi cssCommonAttr 	guifg=#FFF6A6
+hi cssTableAttr 	guifg=#FFF6A6
+hi cssListAttr 		guifg=#FFF6A6
+hi cssGradientAttr 	guifg=#FFF6A6
+hi cssValueLength 	guifg=#FFF6A6
+hi cssMediaProp 	guifg=#e5b2ff
+hi cssUIProp 		guifg=#e5b2ff
+hi cssPseudoClassId 	guifg=#f1f1fc
+hi cssTagName 		guifg=#f1f1fc
+hi cssCustomProp 	guifg=#f1f1fc
 " }}}
 " SQL {{{
 hi sqlStatement         guifg=#FFCCB0
@@ -171,7 +195,7 @@ hi CustomOperator       guifg=#EB90B1
 " }}}
 " VimWiki {{{
 hi VimwikiBold          guifg=#4CECAE
-hi vimwikiListTodo      guifg=#EB90B1
+hi vimwikiListTodo      guifg=#B3FA9D
 hi VimwikiBoldChar      guifg=#9494cc
 hi VimwikiHeaderChar      guifg=#9494cc
 " }}}
