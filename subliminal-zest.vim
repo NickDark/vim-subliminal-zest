@@ -152,9 +152,10 @@ hi jsxBraces            guifg=#F1F1FC
 hi jsxOpenPunct         guifg=#F1F1FC
 hi jsxClosePunct        guifg=#F1F1FC
 " }}}
-" Conf / Dosini
+" Conf / Dosini {{{
 hi dosiniHeader 	guifg=#ffccb0
 hi dosiniValue 		guifg=#b3fa9d
+" }}}
 " NERDTree {{{
 " hi NERDTreeCWD 		guifg=bg 	guibg=bg
 " hi NERDTreeVCS 		guifg=bg 	guibg=bg
