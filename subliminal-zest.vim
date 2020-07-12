@@ -10,6 +10,7 @@ let g:colors_name = "subliminal-zest"
 " #01001D
 " #F1F1FC
 " #9494CC
+" #454d95
 " #E5B2FF
 " #8CC6FF
 " #242272
@@ -25,7 +26,7 @@ set fillchars+=vert:\|
 syn match Paren /[(){}]/
 " syn match CustomOperator /[=+-<>!%&|]/
 hi VertSplit            guifg=bg 		guibg=bg 	gui=NONE
-hi StatusLine           guibg=bg
+hi StatusLine           guibg=#01001D
 hi StatusLineNC         guibg=bg
 hi FoldColumn           guifg=#9494CC           guibg=bg
 hi SignColumn           guibg=bg
@@ -35,7 +36,7 @@ hi LineNr               guifg=#9494CC
 hi Cursor               guifg=black		guibg=white 	gui=reverse
 hi iCursor              guifg=black		guibg=white
 hi CursorIM             guifg=reverse		guibg=reverse
-hi CursorLine           guibg=bg
+hi CursorLine           guibg=#454d95
 hi CursorLineNr         guifg=#F1F1FC
 hi MatchParen           guifg=#F1F1FC		guibg=#851800
 hi Visual               guifg=Black		guibg=White
@@ -59,6 +60,8 @@ hi Exception            guifg=#FFCCB0
 " }}}
 " Vim {{{
 hi vimError             guifg=#eb90b1       guibg=bg
+hi healthError          guifg=#eb90b1       guibg=bg
+hi healthSuccess        guifg=#b3fa9d       guibg=bg
 " hi Question             guifg=#eb90b1
 hi Pmenu                guifg=#f1f1fc       guibg=#242272
 hi PmenuSel             guifg=#f1f1fc       guibg=#612150
@@ -67,30 +70,30 @@ hi vimMap               guifg=#9494CC
 hi vimSet               guifg=#9494CC
 hi vimHighlight         guifg=#9494CC
 hi vimGroup             guifg=#4CECAE
-hi vimString            guifg=#F1F1FC
+hi vimString            guifg=#b3fa9d
 hi vimSep               guifg=#F1F1FC
 hi vimBracket           guifg=#F1F1FC
 hi vimParenSep          guifg=#F1F1FC
 hi vimCommentTitle      guifg=#8CC6FF
 hi vimOption            guifg=#FFF6A6
 hi vimFuncSID           guifg=#FFF6A6
-hi vimIsCommand         guifg=#9494CC
-hi vimNotFunc           guifg=#FFCCB0
+hi vimIsCommand         guifg=#F1F1FC
+hi vimNotFunc           guifg=#e5b2ff
 hi vimFunction          guifg=#4CECAE
-hi vimFuncBody          guifg=#EB90B1
+hi vimFuncBody          guifg=#F1F1FC
 hi vimOper              guifg=#EB90B1
-hi vimOperParen         guifg=#9494CC
-hi vimFuncName          guifg=#FFF6A6
+hi vimOperParen         guifg=#F1F1FC
+hi vimFuncName          guifg=#4CECAE
 hi vimSetEqual          guifg=#EB90B1
 hi vimHiGroup           guifg=#4CECAE
-hi vimCommand           guifg=#FFCCB0
+hi vimCommand           guifg=#9494cc
 hi vimUserFunc          guifg=#4CECAE
 hi vimHiGuiFgBg         guifg=#8CC6FF
 hi vimContinue          guifg=#8CC6FF
 hi vimAugroup           guifg=#4cecae
 hi vimHiClear           guifg=#8CC6FF
 hi vimMapMod            guifg=#F1F1FC
-hi vimVar               guifg=#FFF6A6
+hi vimVar               guifg=#ffccb0
 hi vimNotation          guifg=#FFF6A6
 hi vimMapModKey         guifg=#FFF6A6
 hi Ignore	            guifg=bg
@@ -113,9 +116,11 @@ hi StartifyFile         guifg=#b3fa9d
 " }}}
 " CoC {{{
 hi CocErrorHighlight  	guifg=#eb90b1 	guibg=bg
+hi CocErrorLine  	guifg=#eb90b1 	guibg=bg
 hi CocHintHighlight  	guifg=#b3fa9d 	guibg=bg
 hi CocInfoHighlight  	guifg=#8CC6FF 	guibg=bg
 hi CocWarningHighlight  guifg=#FFF6A6 	guibg=bg
+hi CocWarningLine       guifg=#FFF6A6 	guibg=bg
 " }}}
 " Markdown {{{
 hi markdownOrderedListMarker        guifg=#eb90b1
@@ -147,6 +152,9 @@ hi jsxBraces            guifg=#F1F1FC
 hi jsxOpenPunct         guifg=#F1F1FC
 hi jsxClosePunct        guifg=#F1F1FC
 " }}}
+" Conf / Dosini
+hi dosiniHeader 	guifg=#ffccb0
+hi dosiniValue 		guifg=#b3fa9d
 " NERDTree {{{
 " hi NERDTreeCWD 		guifg=bg 	guibg=bg
 " hi NERDTreeVCS 		guifg=bg 	guibg=bg
@@ -182,6 +190,18 @@ hi cssPseudoClassId 	guifg=#f1f1fc
 hi cssTagName 		guifg=#f1f1fc
 hi cssCustomProp 	guifg=#f1f1fc
 " }}}
+" Python {{{
+hi pythonBuiltin 	guifg=#e5b2ff
+hi pythonException 	guifg=#eb90b1
+hi pythonExceptions 	guifg=#fff6a6
+hi pythonNumber 	guifg=#fff6a6
+hi pythonOperator 	guifg=#e5b2ff
+hi pythonConditional 	guifg=#eb90b1
+hi pythonString 	guifg=#b3fa9d
+hi pythonQuotes 	guifg=#b3fa9d
+hi pythonStatement 	guifg=#9494cc
+hi pythonDecoratorName 	guifg=#9494cc
+" }}}
 " SQL {{{
 hi sqlStatement         guifg=#FFCCB0
 hi sqlOperator          guifg=#9494CC
@@ -189,7 +209,7 @@ hi sqlSpecial           guifg=#9494CC
 hi sqlKeyword           guifg=#9494CC
 hi sqlNumber            guifg=#FFF6A6
 hi sqlFold              guifg=#9494CC
-hi sqlFunction          guifg=#e5b2ff
+hi sqlFunction          guifg=#4cecae
 hi sqlString            guifg=#b3fa9d
 hi CustomOperator       guifg=#EB90B1
 " }}}
@@ -199,13 +219,19 @@ hi vimwikiListTodo      guifg=#B3FA9D
 hi VimwikiBoldChar      guifg=#9494cc
 hi VimwikiHeaderChar      guifg=#9494cc
 " }}}
+" JSON {{{
+hi JsonNoQuotesError 		guifg=#eb90b1 	guibg=None
+hi JsonTrailingCommaError 	guifg=#eb90b1 	guibg=None
+hi JsonString 			guifg=#b3fa9d
+hi JsonQuote 			guifg=#f1f1fc
+" }}}
 " Help page {{{
 hi helpSpecial          guifg=#b3fa9d
 hi helpHyperTextJump    guifg=#e5b2ff
 " }}}
 " ALE {{{
-highlight ALEErrorSign guibg=NONE guifg=red
-highlight ALEWarningSign guibg=NONE guifg=yellow
+hi ALEErrorSign 	guibg=NONE guifg=#eb90b1
+hi ALEWarningSign 	guibg=NONE guifg=#fff6a6
 " hi ALEWarning             guifg=#eb90b1
 " hi ALEStyleErrorSign    guifg=#eb90b1
 " hi ALEWarning           guifg=#fff6a6
