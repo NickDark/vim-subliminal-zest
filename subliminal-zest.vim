@@ -6,7 +6,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "subliminal-zest"
+let g:colors_name = "subliminal_zest"
 " #01001D
 " #F1F1FC
 " #9494CC
@@ -25,49 +25,49 @@ let g:colors_name = "subliminal-zest"
 set fillchars+=vert:\|
 syn match Paren /[(){}]/
 " syn match CustomOperator /[=+-<>!%&|]/
-hi VertSplit            guifg=bg 		guibg=bg 	gui=NONE
+hi VertSplit            guifg=bg 		    guibg=bg 	    gui=NONE
 hi StatusLine           guibg=#01001D
 hi StatusLineNC         guibg=bg
-hi FoldColumn           guifg=#9494CC           guibg=bg
+hi FoldColumn           guifg=#9494CC       guibg=bg
 hi SignColumn           guibg=bg
-hi EndOfBuffer          guifg=#01001D
-hi Folded               guifg=#EB90B1       	guibg=bg
+hi EndOfBuffer          guifg=#01001d       guibg=#01001D   gui=NONE
+hi Folded               guifg=#EB90B1   	guibg=bg
 hi LineNr               guifg=#9494CC
-hi Cursor               guifg=black		guibg=white 	gui=reverse
-hi iCursor              guifg=black		guibg=white
+hi Cursor               guifg=black		    guibg=white 	gui=reverse
+hi iCursor              guifg=black		    guibg=white
 hi CursorIM             guifg=reverse		guibg=reverse
 hi CursorLine           guibg=#454d95
 hi CursorLineNr         guifg=#F1F1FC
-hi MatchParen           guifg=#F1F1FC		guibg=#851800
-hi Visual               guifg=Black		guibg=White
+" hi MatchParen         guifg=#F1F1FC		guibg=#851800
+hi Visual               guifg=Black		    guibg=White
 hi MoreMsg              guifg=#B3FA9D		guibg=bg
 hi ErrorMsg             guifg=#EB90B1		guibg=bg
 hi WarningMsg           guifg=#FFF6A6		guibg=bg
-hi SpellBad             guifg=#eb90b1		guibg=bg     	gui=standout
+hi SpellBad             guifg=#eb90b1		guibg=bg        gui=underline   guisp=#eb90b1
 hi Title                guifg=#FFCCB0
-hi Normal		guifg=#F1F1FC		guibg=bg
-hi Comment	        guifg=#8CC6FF
-hi Constant	        guifg=#FFF6A6
-hi Special	        guifg=#9494CC
+hi Normal		        guifg=#F1F1FC		guibg=bg
+hi Comment	            guifg=#8CC6FF
+hi Constant	            guifg=#FFF6A6
+hi Special	            guifg=#9494CC
 hi Identifier           guifg=#9494CC
 hi Statement            guifg=#FFCCB0
 hi Paren                guifg=#F1F1FC
-hi PreProc	        guifg=#9494CC
+hi PreProc	            guifg=#9494CC
 hi Type	                guifg=#e5b2ff
-hi Function	        guifg=#4CECAE
-hi Repeat	        guifg=#FFCCB0
+hi Function	            guifg=#4CECAE
+hi Repeat	            guifg=#FFCCB0
 hi Exception            guifg=#FFCCB0
 " }}}
 " Vim {{{
 hi vimError             guifg=#eb90b1       guibg=bg
 hi healthError          guifg=#eb90b1       guibg=bg
 hi healthSuccess        guifg=#b3fa9d       guibg=bg
-" hi Question             guifg=#eb90b1
+" hi Question           guifg=#eb90b1
 hi Pmenu                guifg=#f1f1fc       guibg=#242272
 hi PmenuSel             guifg=#f1f1fc       guibg=#612150
 hi PmenuSbar            guibg=#242272
 hi vimMap               guifg=#9494CC
-hi vimSet               guifg=#9494CC
+hi vimSet               guifg=#eb90b1
 hi vimHighlight         guifg=#9494CC
 hi vimGroup             guifg=#4CECAE
 hi vimString            guifg=#b3fa9d
@@ -114,9 +114,13 @@ hi StartifyFile         guifg=#b3fa9d
 " hi StartifySlash
 " hi StartifySpecial
 " }}}
+" Matchup {{{
+hi MatchParen       guifg=#f1f1fc   guibg=#612150
+hi MatchWord        guifg=None      guibg=None      gui=standout
+" }}}
 " CoC {{{
 hi CocErrorHighlight  	guifg=#eb90b1 	guibg=bg
-hi CocErrorLine  	guifg=#eb90b1 	guibg=bg
+hi CocErrorLine  	    guifg=#eb90b1 	guibg=bg
 hi CocHintHighlight  	guifg=#b3fa9d 	guibg=bg
 hi CocInfoHighlight  	guifg=#8CC6FF 	guibg=bg
 hi CocWarningHighlight  guifg=#FFF6A6 	guibg=bg
@@ -135,11 +139,11 @@ hi jsReturn             guifg=#9494CC
 hi jsFunction           guifg=#9494CC
 hi jsArrowFunction      guifg=#4cecae
 hi jsClassDefinition    guifg=#FFCCB0
-hi jsConditional 	guifg=#e5b2ff
-hi jsRepeat 		guifg=#e5b2ff
+hi jsConditional 	    guifg=#e5b2ff
+hi jsRepeat 		    guifg=#e5b2ff
 hi jsTernaryIfOperator  guifg=#eb90b1
-hi jsString 		guifg=#b3fa9d
-hi jsxString 		guifg=#b3fa9d
+hi jsString 		    guifg=#b3fa9d
+hi jsxString 		    guifg=#b3fa9d
 hi jsxComponentName     guifg=#FFCCB0
 hi jsStorageClass       guifg=#9494cc
 hi jsSuper              guifg=#9494cc
@@ -155,28 +159,48 @@ hi jsxClosePunct        guifg=#F1F1FC
 " Conf / Dosini {{{
 hi dosiniHeader 	guifg=#ffccb0
 hi dosiniValue 		guifg=#b3fa9d
+hi confString       guifg=#b3fa9d
+" }}}
+" YAML {{{
+hi yamlPlainScalar      guifg=#f1f1fc
+hi yamlFloat            guifg=#fff6a6
+hi yamlBlockMappingKey  guifg=#e5b2ff
 " }}}
 " NERDTree {{{
-" hi NERDTreeCWD 		guifg=bg 	guibg=bg
-" hi NERDTreeVCS 		guifg=bg 	guibg=bg
+hi NERDTreeCWD 		    guifg=#e5b2ff 	guibg=bg
+" hi NERDTreeVCS 		guifg=bg 	    guibg=bg
+hi NERDTreeFlags        guifg=#ffccb0
+hi NERDTreeHelp         guifg=#8cc6ff
+hi NERDTreeDir          guifg=#b3fa9d
+hi NERDTreeUp           guifg=#9494CC
+" }}}
+" Muttrc {{{
+hi MuttrcVarStr     guifg=#f1f1fc
+hi MuttrcString     guifg=#B3FA9D
 " }}}
 " JSON {{{
 hi jsonKeywordMatch 	guifg=#EB90B1
 " }}}
 " Git {{{
-hi gitconfigNone              guifg=#eb90b1
-hi gitconfigSection             guifg=#b3fa9d
-hi jsxCloseString       guifg=#F1F1FC
+hi gitconfigNone            guifg=#eb90b1
+hi gitconfigSection         guifg=#b3fa9d
+hi jsxCloseString           guifg=#F1F1FC
 " }}}
 " HTML {{{
 hi htmlTag              guifg=#9494CC
 hi htmlTagN             guifg=#9494CC
 hi htmlTagName          guifg=#f1f1fc
 hi htmlHead             guifg=#EB90B1
+hi htmlString           guifg=#b3fa9d
+" }}}
+" Jinja {{{
+hi jinjaVariable        guifg=#f1f1fc
+hi jinjaString          guifg=#b3fa9d
 " }}}
 " CSS {{{
 hi cssBraces 		guifg=#9494cc
 hi cssStringQ 		guifg=#b3fa9d
+hi cssStringQQ 		guifg=#b3fa9d
 hi cssNoise 		guifg=#9494cc
 hi cssAttrRegion 	guifg=#4cecae
 hi BG000000 		guifg=#4cecae
@@ -192,15 +216,16 @@ hi cssTagName 		guifg=#f1f1fc
 hi cssCustomProp 	guifg=#f1f1fc
 " }}}
 " Python {{{
-hi pythonBuiltin 	guifg=#e5b2ff
-hi pythonException 	guifg=#eb90b1
+hi pythonBuiltin    	guifg=#e5b2ff
+hi pythonException  	guifg=#ffccb0
 hi pythonExceptions 	guifg=#fff6a6
-hi pythonNumber 	guifg=#fff6a6
-hi pythonOperator 	guifg=#e5b2ff
-hi pythonConditional 	guifg=#eb90b1
-hi pythonString 	guifg=#b3fa9d
-hi pythonQuotes 	guifg=#b3fa9d
-hi pythonStatement 	guifg=#9494cc
+hi pythonNumber     	guifg=#fff6a6
+hi pythonOperator   	guifg=#eb90b1
+hi pythonConditional 	guifg=#ffccb0
+hi pythonString 	    guifg=#b3fa9d
+hi pythonTripleQuotes   guifg=#8CC6FF
+hi pythonQuotes 	    guifg=#b3fa9d
+hi pythonStatement 	    guifg=#9494cc
 hi pythonDecoratorName 	guifg=#9494cc
 " }}}
 " SQL {{{

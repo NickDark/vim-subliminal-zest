@@ -1,13 +1,13 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/zeonica.vim
+" Filename: autoload/lightline/colorscheme/subliminal_zest.vim
 " Author: Nicholas Prieto
 " License: MIT License
-" Last Change: May 11, 2020
+" Last Change: July 12, 2020
 " =============================================================================
-" Zeonica Theme
-let s:black     = [ '#01001D', 234 ]
-let s:darkgray  = [ '#01001D', 236 ]
-let s:gray      = [ '#01001D', 242 ]
+" Subliminal-Zest Theme
+let s:black     = [ '#01001d', 234 ]
+let s:darkgray  = [ '#01001d', 236 ]
+let s:gray      = [ '#01001d', 242 ]
 let s:text      = [ '#F1F1FC', 253 ]
 let s:white     = [ '#c7c7c7', 251 ]
 let s:blue      = [ '#8CC6FF', 75 ]
@@ -35,5 +35,4 @@ let s:p.visual.left     = [ [ s:black, s:yellow ], [ s:green, s:gray ] ]
 let s:p.tabline.left    = [ [ s:text, s:darkgray ] ]
 let s:p.tabline.tabsel  = [ [ s:black, s:orange, 'bold' ] ]
 
-let g:lightline#colorscheme#zeonica#palette = lightline#colorscheme#flatten(s:p)
-
+let g:lightline#colorscheme#subliminal_zest#palette = lightline#colorscheme#flatten(s:p)
